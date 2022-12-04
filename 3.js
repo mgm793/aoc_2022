@@ -4,7 +4,6 @@ const input = fs.readFileSync(filename, "utf-8").split("\n");
 
 function getRepeatedByMiddle(chunk) {
   const middle = Math.floor(chunk.length / 2);
-
   const visited = new Set();
   for (let i = 0; i < chunk.length; ++i) {
     if (i < middle) {
